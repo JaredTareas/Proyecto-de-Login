@@ -44,7 +44,7 @@ Mi parte consistió en crear el flujo inicial del sistema:
 login.html → index.html → salir del sistema → login.html
 ```
 
-Esto permite simular el acceso a un sistema sin usar base de datos ni backend.
+Esto permite simular el acceso a un sistema sin usar base de datos ni backend. como extra adicional se comento el codigo para que mi compañero entienda mejor lo que se esta realizando en caso de perderse
 
 ---
 
