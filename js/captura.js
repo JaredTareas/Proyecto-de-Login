@@ -92,10 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // 2. Validar que el número de control tenga exactamente 6 dígitos numéricos
-            const regexNumControl = /^\d{6}$/;
+            // 2. Validar que el número de control tenga exactamente 8 dígitos numéricos
+            const regexNumControl = /^\d{8}$/;
             if (!regexNumControl.test(numControl)) {
-                errorDiv.textContent = "El número de control debe tener exactamente 6 dígitos.";
+                errorDiv.textContent = "El número de control debe tener exactamente 8 dígitos.";
                 errorDiv.classList.remove("d-none");
                 return;
             }
