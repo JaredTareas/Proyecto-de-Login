@@ -293,4 +293,4 @@ Mi participación se enfocó en:
 
 <p align="center"> <img width="850" alt="Pantalla principal y menu" src="https://github.com/user-attachments/assets/eefdfa26-7308-4f79-a8ea-a986c6b8185b" /> </p>
 
-<p align="center"> <img width="350" alt="Captura de usuario y alumnos" src="https://github.com/user-attachments/assets/d3b6ccba-f7da-4235-8c0b-5a9f63635d45" /> </p>
+<p align="center"> <img width="850" alt="Captura de usuario y alumnos" src="https://github.com/user-attachments/assets/d3b6ccba-f7da-4235-8c0b-5a9f63635d45" /> </p>
