@@ -204,5 +204,14 @@ Mi participación se enfocó en:
 ---
 
 
+### evidencia del avance numero 1
+
+
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/e10926dd-306f-4da0-a7b8-030de8a47506" />
+
+<img width="1919" height="900" alt="image" src="https://github.com/user-attachments/assets/46dd17fa-5876-4709-8134-710487596762" />
+
+<img width="402" height="372" alt="image" src="https://github.com/user-attachments/assets/8108e139-db81-4a38-9868-8e3a49136808" />
+
 
 
