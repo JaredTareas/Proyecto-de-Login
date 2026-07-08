@@ -2,6 +2,10 @@
 
 ## Nombre del proyecto
 
+## INTEGRANTES DEL EQUIPO
+FUENTES LOPEZ LEONARDO
+GARCIA GARCIA LUIS JARED
+
 **Login funcional con HTML, CSS y JavaScript**
 
 ## Descripción breve
