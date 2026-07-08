@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Evitamos temporalmente que el de alumnos recargue la página (lo programamos en el Paso 7)
+    // Evitamos temporalmente que el de alumnos recargue la página 
     if (formAlumno) {
         formAlumno.addEventListener("submit", function (event) {
             event.preventDefault(); 
