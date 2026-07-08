@@ -37,8 +37,29 @@
             <h5 class="offcanvas-title" id="sidebarLabel">Menú Principal</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
-        <div class="offcanvas-body">
-            <p class="text-muted small">El menú irá aquí...</p>
+        <div class="offcanvas-body p-0">
+            <div class="accordion accordion-flush" id="menuSidebar">
+                
+                <div class="accordion-item bg-dark border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsuarios" aria-expanded="false" aria-controls="collapseUsuarios">
+                            👤 Usuarios
+                        </button>
+                    </h2>
+                    <div id="collapseUsuarios" class="accordion-collapse collapse" data-bs-parent="#menuSidebar">
+                        <div class="accordion-body bg-secondary bg-opacity-25 p-0">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white-50 ps-4 py-2" href="#" id="btnCaptura">
+                                        📝 Captura
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
     <main class="container mt-5">
