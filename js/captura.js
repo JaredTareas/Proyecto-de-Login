@@ -77,7 +77,55 @@ document.addEventListener("DOMContentLoaded", function () {
     // Evitamos temporalmente que el de alumnos recargue la página 
     if (formAlumno) {
         formAlumno.addEventListener("submit", function (event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Evitamos que la página se recargue
+
+            const nombre = document.getElementById("nombreAlumno").value.trim();
+            const numControl = document.getElementById("numControl").value.trim();
+            const fechaNac = document.getElementById("fechaNac").value;
+            const errorDiv = document.getElementById("errorAlumno");
+            
+            errorDiv.classList.add("d-none"); // Ocultamos errores previos
+
+            // 1. Validar campos vacíos
+            if (nombre === "" || numControl === "" || fechaNac === "") {
+                errorDiv.textContent = "Por favor, completa todos los campos del alumno.";
+                errorDiv.classList.remove("d-none");
+                return;
+            }
+
+            // 2. Validar que el número de control tenga exactamente 6 dígitos numéricos
+            const regexNumControl = /^\d{6}$/;
+            if (!regexNumControl.test(numControl)) {
+                errorDiv.textContent = "El número de control debe tener exactamente 6 dígitos.";
+                errorDiv.classList.remove("d-none");
+                return;
+            }
+
+            // 3. Preparar los datos del modal usando utileria.js
+            const iconoModal = document.getElementById("iconoModal");
+            const mensajeModal = document.getElementById("mensajeModal");
+            const detalleModal = document.getElementById("detalleModal");
+            const edad = calcularEdad(fechaNac);
+            
+            if (esMayorDeEdad(fechaNac)) {
+                iconoModal.textContent = "✅";
+                mensajeModal.textContent = "Mayor de edad";
+                mensajeModal.className = "mb-0 text-success";
+                detalleModal.textContent = `El alumno ${nombre} tiene ${edad} años y es mayor de edad.`;
+            } else {
+                iconoModal.textContent = "❌";
+                mensajeModal.textContent = "Menor de edad";
+                mensajeModal.className = "mb-0 text-danger";
+                detalleModal.textContent = `El alumno ${nombre} tiene ${edad} años y es menor de edad.`;
+            }
+
+            // 4. Mostrar el modal en pantalla
+            const modalElement = document.getElementById("modalEdad");
+            const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
+            modal.show();
+            
+            formAlumno.reset(); // Limpiar el formulario
         });
     }
 });
+
