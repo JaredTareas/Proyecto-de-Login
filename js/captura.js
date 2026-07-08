@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Evitamos temporalmente que el de alumnos recargue la página 
     if (formAlumno) {
         formAlumno.addEventListener("submit", function (event) {
             event.preventDefault(); // Evitamos que la página se recargue
