@@ -1,0 +1,21 @@
+.login-body {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+}
+
+.login-card {
+    border-radius: 18px;
+    border: none;
+}
+
+.login-card h2 {
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.system-body {
+    background-color: #f1f5f9;
+}
+
+.card {
+    border-radius: 15px;
+}
